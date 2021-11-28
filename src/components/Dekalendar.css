@@ -1,0 +1,86 @@
+:root {
+    --teal-050: #effcf6;
+    --teal-100: #c6f7e2;
+    --teal-200: #8eedc7;
+    --teal-300: #65d6ad;
+    --teal-400: #3ebd93;
+    --teal-500: #27ab83;
+    --teal-600: #199473;
+    --teal-700: #147d64;
+    --teal-800: #0c6b58;
+    --teal-900: #014d40;
+    --blue-grey-050: #f0f4f8;
+    --blue-grey-100: #d9e2ec;
+    --blue-grey-200: #bcccdc;
+    --blue-grey-300: #9fb3c8;
+    --blue-grey-400: #829ab1;
+    --blue-grey-500: #627d98;
+    --blue-grey-600: #486581;
+    --blue-grey-700: #334e68;
+    --blue-grey-800: #243b53;
+    --blue-grey-900: #102a43;
+}
+
+.week-day{
+    background-color: #fff;
+    color : black;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    list-style-type: none;
+    margin-top: 1.25em;
+    font-size: 1.4em;
+    color: black;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    font-variant: small-caps;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.week-day li{
+    width: 4.6ch;
+    height: 4.6ch;
+    margin-top: 10px;
+}
+
+.month-grid {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    list-style-type: none;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    height : 60vh;
+    font-size: 1.4em;
+    vertical-align: center;
+    text-align: center;
+}
+
+.month-grid .today {
+    outline: solid;
+    border: #102a43;
+    border-radius: 50%;
+}
+
+.month-grid li {
+    position: relative;
+    border: 0;
+    width: 4.6ch;
+    height: 4.6ch;
+    background-color: transparent;
+    color: var(--blue-grey-600);
+}
+.month-grid li:hover,
+.month-grid li:focus {
+  outline: solid var(--blue-grey-700);
+  background-color: var(--blue-grey-050);
+  color: var(--blue-grey-700);
+}
+
+.month-grid li:active,
+.month-grid li.is-selected {
+  background-color: var(--teal-100);
+  color: var(--teal-900);
+}
